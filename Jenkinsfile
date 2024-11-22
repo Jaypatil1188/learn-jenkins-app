@@ -16,8 +16,13 @@ pipeline {
                     npm --version
                     npm ci
                     npm run build
-                    la -la
+                    ls -la
                 '''
+            }
+        }
+        stage('Test'){
+            steps{
+                echo 'Test Stop'
             }
         }
     }
